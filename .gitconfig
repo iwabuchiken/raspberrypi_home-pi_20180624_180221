@@ -1,2 +1,15 @@
 [gui]
 	fontui = -family \"Takao Pゴシック\" -size 14 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"Takao Pゴシック\" -size 14 -weight normal -slant roman -underline 0 -overstrike 0
+[user]
+	email = iwabuchi.k.2010@gmail.com
+	name = iwabuchiken
+
+[alias]
+	c = commit
+	co = checkout
+	s = status
+	a = add
+	l = log
+
+	
