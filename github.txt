@@ -1,0 +1,10 @@
+github (machine=Win.XP, Win_7)
+name: iwabuchiken
+email: iwabuchi.k.2010@gmail.com
+"email=iwabuchi.k.2010@gmail.com
+password=s9Lna005XQ
+passphrase(win-7, ssh key)=awesomeproducts
+pass phrase: syria (set in Git Bash)
+passphrase(win-7, wubi)=abcde
+passphrase(wubi, Ubuntu12.04)=awesomeproducts
+name= "
