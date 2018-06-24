@@ -1,0 +1,18 @@
+#!/bin/sh
+
+#if [ "$1" == "kill" ]; then
+#if [ "$1" == "kill" ]; then
+if [ "$1" = "kill" ]; then
+
+	echo "param is 'kill'"
+	
+	#echo "stopping vnc server at :1 ..."
+	
+	#tightvncserver -kill :1
+
+	
+else
+
+	echo "unknown param : '$1'"
+	
+fi

@@ -1,0 +1,3 @@
+pi@raspberrypi:/etc/lighttpd $ sudo service lighttpd restart
+Job for lighttpd.service failed because the control process exited with error code.
+See "systemctl status lighttpd.service" and "journalctl -xe" for details.

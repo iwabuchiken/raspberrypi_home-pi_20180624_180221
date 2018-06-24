@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "restarting samba..."
+
+sudo /etc/init.d/samba restart

@@ -1,0 +1,14 @@
+pi@raspberrypi:~ $ tightvncserver :1 -geometry 1280x800 -depth 24
+
+You will require a password to access your desktops.
+
+Password: 
+Verify:   
+Would you like to enter a view-only password (y/n)? n
+
+New 'X' desktop is raspberrypi:1
+
+Creating default startup script /home/pi/.vnc/xstartup
+Starting applications specified in /home/pi/.vnc/xstartup
+Log file is /home/pi/.vnc/raspberrypi:1.log
+

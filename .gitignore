@@ -1,0 +1,16 @@
+###################
+#  files
+###################
+*.png
+
+
+
+###################
+#  dirs
+###################
+.WolframEngine/
+.cache/
+.config/
+.local/
+.themes/
+python_games/

@@ -1,0 +1,4 @@
+ADD "PREDICTION" S"あいうえお" N1529549256 S"あいうえお"
+ADD "CAND_HISTORY" S"あいうえお" S"あいうえお"
+ADD "PREDICTION" S"つかいかた" N1529828563 S"使い方"
+ADD "CAND_HISTORY" S"つかいかた" S"使い方"

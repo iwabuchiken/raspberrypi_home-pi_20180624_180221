@@ -1,0 +1,19 @@
+pi@raspberrypi:~ $ sudo apt-get --no-install-recommends install python-flup
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています                
+状態情報を読み取っています... 完了
+以下のパッケージが自動でインストールされましたが、もう必要とされていません:
+  lxkeymap python-cairo python-gobject python-gobject-2 python-gtk2 python-xklavier
+これを削除するには 'sudo apt autoremove' を利用してください。
+以下のパッケージが新たにインストールされます:
+  python-flup
+アップグレード: 0 個、新規インストール: 1 個、削除: 0 個、保留: 4 個。
+33.9 kB のアーカイブを取得する必要があります。
+この操作後に追加で 237 kB のディスク容量が消費されます。
+取得:1 http://ftp.tsukuba.wide.ad.jp/Linux/raspbian/raspbian stretch/main armhf python-flup all 1.0.2-5 [33.9 kB]
+33.9 kB を 14秒 で取得しました (2,313 B/s)                           
+以前に未選択のパッケージ python-flup を選択しています。
+(データベースを読み込んでいます ... 現在 145670 個のファイルとディレクトリがインストールされています。)
+.../python-flup_1.0.2-5_all.deb を展開する準備をしています ...
+python-flup (1.0.2-5) を展開しています...
+python-flup (1.0.2-5) を設定しています ...

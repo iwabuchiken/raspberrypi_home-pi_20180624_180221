@@ -1,0 +1,4 @@
+tightvncserver -kill :1
+/etc/init.d/samba stop
+/etc/init.d/nginx stop
+

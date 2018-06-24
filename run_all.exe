@@ -1,0 +1,5 @@
+# run all executable :  /home/pi/run*
+#run_nginx.exe
+run_samba.exe
+run_vnc.exe
+

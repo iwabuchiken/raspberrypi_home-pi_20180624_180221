@@ -1,0 +1,42 @@
+#!/bin/sh
+
+<<'END'
+
+	file	: run_nginx.exe
+	at		:  2018年  6月 12日 火曜日 06:59:24 JST
+
+
+END
+
+opt="start"
+
+if [ -z "$1" ]; then
+
+	echo param is blank
+	
+	echo "starting nginx ..."
+	
+	sudo /etc/init.d/nginx start
+
+elif [ "$1" = "stop" ]; then
+
+	echo "stopping nginx ..."
+	
+	sudo /etc/init.d/nginx stop
+
+elif [ "$1" = "help" ]; then
+
+	echo "<Usage>"
+	
+	echo "./run_nginx.exe [option]"
+	
+	echo "<Options>"
+	echo "start : start server"
+	echo "stop : stop server"
+	echo "help : show usage"
+
+else
+
+	echo "unknown option : '$1'. quitting..."
+
+fi

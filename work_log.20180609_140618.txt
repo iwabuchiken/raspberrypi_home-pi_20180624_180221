@@ -1,0 +1,166 @@
+20180609_141254 =======================
+
+gedit ---> install
+	
+	sudo apt-get install gedit
+
+20180609_142805
+
+	VNC
+	
+	#) sudo apt-get install tightvncserver ::]14.30
+
+# "1" ==> Numerical one (not alphabnet 'L' in the small capital)
+tightvncserver :1 -geometry 1280x800 -depth 24
+
+password = abcdef
+
+
+tightvncserver -kill :1
+
+20180609_141254 =======================
+
+
+2018年  6月 11日 月曜日 06:53:08 JST ====================
+#) sudo apt-get install nginx
+
+sudo /etc/init.d/nginx start
+
+
+#================================ 2018年  6月 12日 火曜日 07:31:00 JST
+sudo /etc/init.d/php7.0-fpm restart
+
+			pi@raspberrypi:~ $ sudo /etc/init.d/php7.0-fpm restart
+			[ ok ] Restarting php7.0-fpm (via systemctl): php7.0-fpm.service.
+
+sudo /etc/init.d/nginx restart
+
+			pi@raspberrypi:~ $ sudo /etc/init.d/nginx restart
+			[ ok ] Restarting nginx (via systemctl): nginx.service.
+
+
+#================================ 2018年  6月 14日 木曜日 13:58:25 JST
+sudo apt-get install samba samba-common-bin
+
+sudo mkdir /var/samba
+
+sudo useradd smbuser
+sudo passwd smbuser
+
+	password = abc
+
+#) sudo chown smbuser:smbuser /var/samba ::]14.05
+
+sudo pdbedit -a smbuser
+
+	password = abc
+	
+	new password:
+	retype new password:
+	Unix username:        smbuser
+	NT username:          
+	Account Flags:        [U          ]
+	User SID:             S-1-5-21-2207267834-2565706141-724381191-1000
+	Primary Group SID:    S-1-5-21-2207267834-2565706141-724381191-513
+	Full Name:            
+	Home Directory:       \\raspberrypi\smbuser
+	HomeDir Drive:        
+	Logon Script:         
+	Profile Path:         \\raspberrypi\smbuser\profile
+	Domain:               RASPBERRYPI
+	Account desc:         x
+	Workstations:         
+	Munged dial:          
+	Logon time:           0
+	Logoff time:          never
+	Kickoff time:         never
+	Password last set:    木, 14  6月 2018 14:06:03 JST
+	Password can change:  木, 14  6月 2018 14:06:03 JST
+	Password must change: never
+	Last bad password   : 0
+	Bad password count  : 0
+	Logon hours         : FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+#) sudo geany /etc/samba/smb.conf ::]14.11 (on Raspi)
+
+sudo /etc/init.d/samba restart
+
+	[ ok ] Restarting nmbd (via systemctl): nmbd.service.
+	[ ok ] Restarting smbd (via systemctl): smbd.service.
+
+
+
+#================================ 2018年  6月 20日 水曜日 16:26:53 JST
+]] kill process
+https://www.linux.com/learn/intro-to-linux/2017/5/how-kill-process-command-line
+
+	kill -9 PID
+
+#================================ 2018年  6月 24日 日曜日 11:39:41 JST
+http://make.bcde.jp/raspberry-pi/%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%8B%E3%82%89gpio%E3%82%92%E6%93%8D%E4%BD%9C/#Weblighttpd-2
+
+     http://make.bcde.jp/raspberry-pi/ブラウザからgpioを操作/#Weblighttpd-2
+    http://make-muda.weblike.jp/2015/11/3343/
+    https://duckduckgo.com/?q=raspberrypi+ブラウザ+制御&atb=v84-1__&ia=web
+
+
+sudo apt-get install lighttpd
+
+#) sudo apt-get --no-install-recommends install python-flup ::]11.58
+
+#) sudo cp /usr/bin/python2.7 /usr/bin/pythonCGI ::]12.01
+
+sudo chmod u+s /usr/bin/pythonCGI
+
+#) ls -l /usr/bin/pythonCGI
+
+#) EDIT : /etc/lighttpd/lighttpd.conf ::]12.06
+
+	sudo cp /etc/lighttpd/lighttpd.conf /etc/lighttpd/lighttpd.conf.orig
+
+#) sudo service lighttpd restart
+
+/var/www/test.py
+
+	sudo chmod +x test.py
+	
+[next]
+http://make.bcde.jp/raspberry-pi/ブラウザからgpioを操作/#Weblighttpd-2
+	"もう一度編集します"
+
+#================================ 2018年  6月 24日 日曜日 16:55:02 JST
+https://askubuntu.com/questions/177041/nginx-disable-autostart
+
+		#) sudo update-rc.d -f nginx disable ::]16.55
+
+install git
+
+		pi@raspberrypi:~ $ apt-cache search gitk
+		gitk - fast, scalable, distributed revision control system (revision tree visualizer)
+		mrb - Manage incremental data snapshots with make/rsync
+		stgit-contrib - set of contributed script to help working with stgit
+		pi@raspberrypi:~ $ apt-cache search git-core
+		devscripts - scripts to make the life of a Debian Package maintainer easier
+		git - fast, scalable, distributed revision control system
+		git-core - fast, scalable, distributed revision control system (obsolete)
+
+
+		sudo apt-get install git ::[17.05
+
+				pi@raspberrypi:~ $ sudo apt-get install git
+					パッケージリストを読み込んでいます... 完了
+					依存関係ツリーを作成しています                
+					状態情報を読み取っています... 完了
+					git はすでに最新バージョン (1:2.11.0-3+deb9u3) です。
+					以下のパッケージが自動でインストールされましたが、もう必要とされていません:
+					  lxkeymap python-cairo python-gobject python-gobject-2 python-gtk2 python-xklavier
+					これを削除するには 'sudo apt autoremove' を利用してください。
+					アップグレード: 0 個、新規インストール: 0 個、削除: 0 個、保留: 4 個。
+
+		#) sudo apt-get install gitk ::[17.08 ::]17.09
+		
+		
+		https://www8.atwiki.jp/git_jp/pages/34.html
+		sudo apt-get install git-gui
+
+#@@@@@@@@@@@@@@ EOF @@@@@@@@@@@@@@@@@

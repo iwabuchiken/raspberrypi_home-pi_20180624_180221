@@ -1,0 +1,61 @@
+#!/bin/sh
+
+#ref block comment https://stackoverflow.com/questions/947897/block-comments-in-a-shell-script
+<<'END'
+
+	file	: run_vnc.exe
+	at		:  2018年  6月 10日 日曜日 15:25:16 JST
+
+
+END
+
+#echo starting tightvnc server at display :1...
+
+#echo param is $1
+
+#set abc="default"
+#abc="default"		#=> working
+#echo abc is $abc
+#echo abc is "$abc"
+
+opt="start"
+
+
+#[ -z "$1" ] && echo "Empty"
+#exit
+
+#ref if else https://stackoverflow.com/questions/2237080/how-to-compare-strings-in-bash
+
+#if [ $1=="" ]; then
+#if [ "$1"=="" ]; then
+#ref empty https://www.cyberciti.biz/faq/unix-linux-bash-script-check-if-variable-is-empty/
+if [ -z "$1" ]; then
+	echo param is blank
+	
+	echo "starting vnc server at :1 ..."
+	
+	tightvncserver :1 -geometry 1280x800 -depth 24
+
+#elif [ $1=="kill" ]; then
+#elif [ "$1"=="kill" ]; then
+#elif [ "$1" == "kill" ]; then
+elif [ "$1" = "kill" ]; then
+
+	#echo param is '$1'
+	echo "stopping vnc server at :1 ..."
+	
+	tightvncserver -kill :1
+	
+	#abc = $1
+
+else
+
+	#ref use param https://stackoverflow.com/questions/4651437/how-to-set-a-variable-to-the-output-of-a-command-in-bash
+	echo "unknown option : '$1'. quitting..."
+
+fi
+
+#echo abc is now  $abc
+
+#tightvncserver :1 -geometry 1280x800 -depth 24
+
