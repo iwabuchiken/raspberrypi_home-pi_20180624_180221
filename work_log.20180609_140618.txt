@@ -208,6 +208,17 @@ http://make.bcde.jp/raspberry-pi/%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%8B%E
 	
 #================================ 2018年  6月 26日 火曜日 13:54:47 JST
 
+http://nielsswinkels.nl/2014/uncategorized/raspbian-keyboard-shortcut-for-window-management/ ::]14.00
+
+
+	http://make-muda.weblike.jp/2015/11/3343/ <= good
+	https://raspi-wannabe.com/remote_raspi_tank_webiopi/#PYTHON <= this
+	
+	https://raspi-wannabe.com/webiopi_install/ #WebIOPi で遠隔操作（インストール編） <= this 
+	
+		http://deviceplus.jp/hobby/raspberrypi_entry_030/ <= ref <= this
+	
+
 
 
 
