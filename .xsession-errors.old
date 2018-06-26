@@ -1,4 +1,4 @@
-Xsession: X session started for pi at 2018年  6月 24日 日曜日 16:45:50 JST
+Xsession: X session started for pi at 2018年  6月 25日 月曜日 14:38:59 JST
 dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 dbus-update-activation-environment: setting DISPLAY=:0
 dbus-update-activation-environment: setting XAUTHORITY=/home/pi/.Xauthority

@@ -183,9 +183,64 @@ ssh github ::[17.40
 	xclip -sel clip < ~/.ssh/id_rsa.pub
 	
 	git remote add origin https://github.com/iwabuchiken/raspberrypi_home-pi_20180624_180221.git
+	#) git push -u origin master ::]18.08
+	
+	===> DONE
+	setup
+	
+
+#================================ 2018年  6月 25日 月曜日 14:06:33 JST
+
+http://make.bcde.jp/raspberry-pi/%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%8B%E3%82%89gpio%E3%82%92%E6%93%8D%E4%BD%9C/#Weblighttpd-2
+
+	/etc/lighttpd/lighttpd.conf
+
+
+	#) sudo service lighttpd restart ::[14.09
+	
+	"次に実行するPythonファイル（/var/www/doStuff.py）を作成します。"
+	
+	#) chmod +x doStuff.py ::]14.12
 	
 	
+	RESULT ==> click on "ON" --> no response to LED ::]14.37
 	
 	
-	
+#================================ 2018年  6月 26日 火曜日 13:54:47 JST
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #@@@@@@@@@@@@@@ EOF @@@@@@@@@@@@@@@@@

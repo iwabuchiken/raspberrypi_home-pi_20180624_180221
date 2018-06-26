@@ -512,3 +512,55 @@ ls -l ./update*
 man update-rc.d 
 date|c
 sudo update-rc.d -f nginx disable
+apt-cache search gitk
+apt-cache search git-core
+sudo apt-get install git
+which git
+git
+which gitk
+sudo apt-get install git
+sudo apt-get install gitk
+which gitk
+gitk
+pwd
+ls -l
+git init
+gitk
+pwd
+mv ./.gitconfig ./.gitconfig~
+pwd
+git status
+git s
+git c -a
+ssh-keygen -t rsa -b 4096 -C "iwabuchi.k.2010@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+which xclip
+xclip -sel clip < ~/.ssh/id_rsa.pub
+whoami
+pwd
+git add README.md
+git log
+pushd ~
+pwd
+git add ./README.md
+git add ~/README.md
+git remote add origin https://github.com/iwabuchiken/raspberrypi_home-pi_20180624_180221.git
+git s
+git c -a
+git s
+git push -u origin master
+sudo geany 
+which gitk
+pwd
+ls -al
+nano ./.gitconfig
+which gitk
+nano ./.gitconfig
+ls /usr/local/git
+ls /usr/local
+gitk
+sudo apt-get install git-gui
+which git-gui
+gitk
+which start
